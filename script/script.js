@@ -15,4 +15,4 @@ if (etàPasseggero <= 18) {
 } else if (etàPasseggero >= 65) {
   prezzoFinale = prezzoSenzaSconto - (prezzoSenzaSconto * scontoSenior) / 100;
 }
-console.log(prezzoFinale);
+console.log(prezzoFinale.toFixed(2));
