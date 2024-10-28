@@ -12,5 +12,7 @@ let prezzoSenzaSconto = distanzaPercorsa * prezzo;
 if (etàPasseggero <= 18) {
   prezzoFinale =
     prezzoSenzaSconto - (prezzoSenzaSconto * scontoMinorenne) / 100;
+} else if (etàPasseggero >= 65) {
+  prezzoFinale = prezzoSenzaSconto - (prezzoSenzaSconto * scontoSenior) / 100;
 }
 console.log(prezzoFinale);
